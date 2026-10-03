@@ -23,8 +23,6 @@
   "ir": {
     "file": "ir/packedscan_beat382840_mask32.ir",
     "lines": 58530,
-    "sha256_raw": "08757dccc081ed85fb3ada23b6fe95a10f8857335acac0c18dd131146e576280",
-    "sha256_lf_normalized": "91089d94694ff71d8598d4a0333187ca01737a4e6867689c41078b145189ab86",
     "regenerated_byte_identical": true,
     "regeneration_command": "generate_packed_scan(5, compact_predicates=True, compact_flow=True, walk_order_bias=1.0)",
     "baseline": {
@@ -37,7 +35,10 @@
       "date": "2026-09-02"
     },
     "delta_cost": -9826,
-    "delta_pct": -2.5024
+    "delta_pct": -2.5024,
+    "sha256_committed_blob_lf": "91089d94694ff71d8598d4a0333187ca01737a4e6867689c41078b145189ab86",
+    "sha256_crlf_working_copy_windows": "08757dccc081ed85fb3ada23b6fe95a10f8857335acac0c18dd131146e576280",
+    "line_endings": "LF enforced by .gitattributes (*.ir text eol=lf)"
   },
   "dev_suite": {
     "suite_key": "mask-dev",

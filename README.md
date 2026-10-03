@@ -18,7 +18,7 @@ Python + numpy (+ pytest). No `numfast`/`wgpu` dependencies.
 - Dev: `suite_key="mask-dev"`, 1024 instances, `cost==382840`, `recovery==1.0`, identical across repeats (own runs, official oracle `mask_sparse_parity.evaluate_mask`, upstream commit `aa6c51e6ad661089cbf71a39c95c577c216b627f`).
 - Adjudication (fresh random 2048-suites, `suite_key=None`): **8/8 × 1.0** (2048/2048 each), min 1.0. 4/4 of these were re-run in this repo and are stored as raw records in `eval/audit_beat382840.fresh.json` (8192/8192 exact matches). Fresh suites draw a hidden random key, so they are recorded as observed with no re-rolling; aggregated audit in `eval/audit_beat382840.json`.
 - Mechanism (independently regenerated): upstream `generate_packed_scan(5, compact_predicates=True, compact_flow=True, walk_order_bias=1.0)` regenerates the frozen file byte-identically after LF normalization (verified with `src/generator_beat382840.py`). Defaults in the shipped generator are OFF; both records 80%/100% were submitted with defaults, i.e. with these optimizations disabled.
-- Frozen IR: `ir/packedscan_beat382840_mask32.ir`, 58530 lines. SHA256 (raw file): `08757dccc081ed85fb3ada23b6fe95a10f8857335acac0c18dd131146e576280`. SHA256 (LF-normalized): `91089d94694ff71d8598d4a0333187ca01737a4e6867689c41078b145189ab86`.
+- Frozen IR: `ir/packedscan_beat382840_mask32.ir`, 58530 lines. SHA256 of the committed blob / of a fresh clone (LF endings, forced by `.gitattributes`): `91089d94694ff71d8598d4a0333187ca01737a4e6867689c41078b145189ab86`. SHA256 of the CRLF working copy on this Windows machine: `08757dccc081ed85fb3ada23b6fe95a10f8857335acac0c18dd131146e576280`.
 
 ## Explicitly NOT claimed (HOLD)
 

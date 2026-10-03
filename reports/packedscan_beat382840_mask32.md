@@ -20,10 +20,10 @@ match.
 Delta: **−9826 (−2.5024 %)**. Baseline authors @jurajselep + @b0nce,
 2026-09-02, `generate_packed_scan(5)`.
 
-IR: 58530 lines. SHA256 (raw bytes):
-`08757dccc081ed85fb3ada23b6fe95a10f8857335acac0c18dd131146e576280`.
-SHA256 (LF-normalized):
+IR: 58530 lines. SHA256 of the committed blob / fresh clone (LF):
 `91089d94694ff71d8598d4a0333187ca01737a4e6867689c41078b145189ab86`.
+SHA256 of the CRLF working copy on Windows:
+`08757dccc081ed85fb3ada23b6fe95a10f8857335acac0c18dd131146e576280`.
 
 ## Method
 
