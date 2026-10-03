@@ -1,0 +1,9 @@
+name: sutro-sparse-parity
+channels:
+  - conda-forge
+dependencies:
+  - python=3.14.6
+  - pip
+  - pip:
+    - numpy==2.5.3
+    - pytest>=8

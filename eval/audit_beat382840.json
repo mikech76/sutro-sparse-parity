@@ -1,0 +1,128 @@
+{
+  "record": "packedscan_beat382840_mask32",
+  "task": "sparse-parity on the grid (Challenge #3), cybertronai/sutro-problems",
+  "spec": {
+    "n_bits": 32,
+    "k_secret": 5,
+    "m_train": 18
+  },
+  "metric": "static read cost = sum over operand reads of ceil(sqrt(addr)) + one final read per declared output cell",
+  "score": "recovery = fraction of instances with exact 32-cell match",
+  "upstream": {
+    "repo": "https://github.com/cybertronai/sutro-problems",
+    "commit": "aa6c51e6ad661089cbf71a39c95c577c216b627f",
+    "oracle": "sparse-parity/mask_sparse_parity.py",
+    "generator": "sparse-parity/packed_sparse_parity.py",
+    "vendored": false
+  },
+  "environment": {
+    "python": "3.14.6",
+    "numpy": "2.5.3",
+    "engine": "vector"
+  },
+  "ir": {
+    "file": "ir/packedscan_beat382840_mask32.ir",
+    "lines": 58530,
+    "sha256_raw": "08757dccc081ed85fb3ada23b6fe95a10f8857335acac0c18dd131146e576280",
+    "sha256_lf_normalized": "91089d94694ff71d8598d4a0333187ca01737a4e6867689c41078b145189ab86",
+    "regenerated_byte_identical": true,
+    "regeneration_command": "generate_packed_scan(5, compact_predicates=True, compact_flow=True, walk_order_bias=1.0)",
+    "baseline": {
+      "file": "submissions/packedscan5_mask32.ir",
+      "cost": 392666,
+      "authors": [
+        "@jurajselep",
+        "@b0nce"
+      ],
+      "date": "2026-09-02"
+    },
+    "delta_cost": -9826,
+    "delta_pct": -2.5024
+  },
+  "dev_suite": {
+    "suite_key": "mask-dev",
+    "suite_version": "mask-sparse-parity-v1",
+    "n_instances": 1024,
+    "cost": 382840,
+    "recovery": 1.0,
+    "runs": [
+      {
+        "cost": 382840,
+        "recovery": 1.0,
+        "n_instances": 1024,
+        "seconds": 19.288
+      },
+      {
+        "cost": 382840,
+        "recovery": 1.0,
+        "n_instances": 1024,
+        "seconds": 0.791
+      }
+    ],
+    "deterministic": true,
+    "cost_matches_expected": true,
+    "recovery_is_1": true
+  },
+  "adjudication_suites_this_run": [
+    {
+      "index": 0,
+      "suite_key": null,
+      "n_instances": 2048,
+      "successes_exact32": 2048,
+      "denominator": 2048,
+      "recovery": 1.0,
+      "cost": 382840,
+      "seconds": 40.507
+    },
+    {
+      "index": 1,
+      "suite_key": null,
+      "n_instances": 2048,
+      "successes_exact32": 2048,
+      "denominator": 2048,
+      "recovery": 1.0,
+      "cost": 382840,
+      "seconds": 39.348
+    },
+    {
+      "index": 2,
+      "suite_key": null,
+      "n_instances": 2048,
+      "successes_exact32": 2048,
+      "denominator": 2048,
+      "recovery": 1.0,
+      "cost": 382840,
+      "seconds": 39.819
+    },
+    {
+      "index": 3,
+      "suite_key": null,
+      "n_instances": 2048,
+      "successes_exact32": 2048,
+      "denominator": 2048,
+      "recovery": 1.0,
+      "cost": 382840,
+      "seconds": 40.122
+    }
+  ],
+  "adjudication_summary_this_run": {
+    "n_fresh_suites": 4,
+    "recovery_min": 1.0,
+    "recovery_max": 1.0,
+    "all_exact_1": true,
+    "successes_total": 8192,
+    "denominator_total": 8192
+  },
+  "adjudication_history": {
+    "total_fresh_suites": 8,
+    "all_exact_1": true,
+    "source": "internal independent repro + search report (fresh random 2048-suites, suite_key=None)",
+    "note": "keys are not reproducible (suite_key=None draws a hidden SystemRandom key); suites recorded as observed, no re-rolling"
+  },
+  "claims": {
+    "bankable_level": 100,
+    "other_levels": "HOLD",
+    "global_optimality_claimed": false,
+    "statement": "lowest known cost on the stated dev + adjudication suites at the pinned upstream commit, beating the 392666 baseline under the same scorer"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "ir_file": "ir\\packedscan_beat382840_mask32.ir",
+  "ir_lines": 58530,
+  "ir_sha256_lf_normalized": "91089d94694ff71d8598d4a0333187ca01737a4e6867689c41078b145189ab86",
+  "suite_version": "mask-sparse-parity-v1",
+  "upstream_dir": "C:\\App\\competitions\\Sutro\\_repo\\sparse-parity",
+  "engine": "vector",
+  "n_fresh_suites": 4,
+  "suites": [
+    {
+      "index": 0,
+      "suite_key": null,
+      "n_instances": 2048,
+      "successes_exact32": 2048,
+      "denominator": 2048,
+      "recovery": 1.0,
+      "cost": 382840,
+      "seconds": 40.507
+    },
+    {
+      "index": 1,
+      "suite_key": null,
+      "n_instances": 2048,
+      "successes_exact32": 2048,
+      "denominator": 2048,
+      "recovery": 1.0,
+      "cost": 382840,
+      "seconds": 39.348
+    },
+    {
+      "index": 2,
+      "suite_key": null,
+      "n_instances": 2048,
+      "successes_exact32": 2048,
+      "denominator": 2048,
+      "recovery": 1.0,
+      "cost": 382840,
+      "seconds": 39.819
+    },
+    {
+      "index": 3,
+      "suite_key": null,
+      "n_instances": 2048,
+      "successes_exact32": 2048,
+      "denominator": 2048,
+      "recovery": 1.0,
+      "cost": 382840,
+      "seconds": 40.122
+    }
+  ],
+  "recovery_min": 1.0,
+  "recovery_max": 1.0,
+  "all_exact_1": true
+}

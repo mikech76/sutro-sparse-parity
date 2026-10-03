@@ -1,0 +1,32 @@
+MIT License
+
+Copyright (c) 2026 Mickech76
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of the files authored for this repository (README, generator wrapper, eval
+scripts, reports, benchmarks, and this LICENSE notice), to deal in those
+files without restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+those files, and to permit persons to whom the files are furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the files.
+
+THE FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE FILES OR THE USE OR OTHER DEALINGS IN THE
+FILES.
+
+Attribution note (not a license change): the frozen IR
+`ir/packedscan_beat382840_mask32.ir` is produced by the upstream generator
+`generate_packed_scan` from `cybertronai/sutro-problems` (`sparse-parity/
+packed_sparse_parity.py`) with `compact_predicates=True, compact_flow=True, walk_order_bias=1.0`.
+The upstream baseline `generate_packed_scan(5)` (cost 392666) is by
+@jurajselep and @b0nce (2026-09-02). Upstream contains no LICENSE file at
+the pinned commit `aa6c51e6ad661089cbf71a39c95c577c216b627f`; no upstream
+source is copied into this repository. This MIT license covers only the
+files authored in this repository.
